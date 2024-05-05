@@ -53,7 +53,7 @@ nav a {
     color: var(--nav-link-color);
     padding: 1rem;
 }
-nav a:link, nava:visited {
+nav a:link, nav a:visited {
     color: var(--nav-link-color);
 }
 nav a:hover {
