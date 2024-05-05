@@ -24,6 +24,9 @@ h1 {
     --nav-hover-link-color: #6F1A07;
     --nav-hover-background-color: #087F8C;
 }
+main{
+    max-width: auto;
+}
 body{
     font-family: var(--paragraph-font);
     max-width: 960px;
