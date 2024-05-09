@@ -27,3 +27,35 @@ p {
 main {
     max-width: 960px;
 }
+
+main img {
+    float: right;
+}
+
+aside {
+    position: relative;
+    width: 20em;
+    text-align: center;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: antiquewhite;
+    color:aqua
+}
