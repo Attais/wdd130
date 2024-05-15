@@ -52,15 +52,23 @@ main img {
 
 aside {
     position: relative;
-    width: 20rem;
+    width: 20em;
+    margin: 1em;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 1em;
     grid-column: 1/2;
     grid-row:1/2;
+    text-align: center;
+    color :black;
 }
 
 aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
+    position: relative;
+}
+
+aside img {
+    width: 250px;
+    height: auto;
 }
 
 *{ 
@@ -76,7 +84,6 @@ aside h2 {
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
     background-color: antiquewhite;
-    color:aqua
 }
 
 header, footer, .grid {
