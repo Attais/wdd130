@@ -63,12 +63,20 @@ aside {
 }
 
 aside h2 {
-    position: relative;
+    position: relative; /* Position the h2 absolutely */
+    /*bottom: 0; Align the h2 to the bottom */
+    left: 50%; /* Move the h2 to the horizontal center */
+    transform: translateX(-50%); /* Center the h2 horizontally */
+    margin: 0; /* Remove any default margins */
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Add a background color with transparency */
+    padding: 0.5em; /* Optional: Add padding to the h2 for better readability */
 }
 
 aside img {
     width: 250px;
     height: auto;
+    position: relative;
+    
 }
 
 *{ 
@@ -94,4 +102,10 @@ header, footer, .grid {
 .grid {
     display: grid;
     align-items: center;
+}
+
+footer {
+    margin-top: 1em;
+    border-top: 1px solid #000;
+    text-align: center;
 }
