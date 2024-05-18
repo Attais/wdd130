@@ -7,7 +7,7 @@
     --accent2-color: #011936;
 
     --heading-font: 'Open Sans', serif;
-    --paragraph-font: 'Monserrat', serif;
+    --paragraph-font: 'Montserrat', serif;
 
     --nav-background-color: #087F8C;
     --nav-link-color: #011936;
@@ -15,29 +15,116 @@
     --nav-hover-background-color: #087F8C;
 }
 
-h1, h2, h3, h4, h5, h6 {
+body {
+    margin: 0;
     font-family: var(--paragraph-font);
-    color: var(--primary-color)
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
-p {
-    padding: 25px;
+header {
+    background-color: var(--secondary-color);
+    padding: 1rem;
 }
 
-.hero img {
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero-img {
     display: block;
     width: 100%;
     height: auto;
-    opacity: 100%;
-    position: relative;
 }
 
-h1, article {
+.hero h1 {
     position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
 }
 
-article img {
-    float: right;
-    width: 10%;
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    width: 80%;
+}
 
+.hero article img {
+    float: right;
+    width: 20%;
+    margin-left: 10px;
+}
+
+.history {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+}
+
+.history .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history .content img {
+    width: 30%;
+    margin: 0 1rem;
+}
+
+.adventure {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 2rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 150px;
+    height: auto;
+}
+
+.footer-content {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.sociallinks img {
+    width: 30px;
+    margin: 0 10px;
 }
