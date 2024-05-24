@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML and CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <h1>Basic HTML and CSS Quiz</h1>
+    <div class="quiz-container">
+        <form action="#" method="post">
+            <!-- Question 1 -->
+            <fieldset class="form-group">
+                <legend>1. What does the acronym CSS stand for?</legend>
+                <input type="text" id="q1" name="q1">
+            </fieldset>
+
+            <!-- Question 2 -->
+            <fieldset class="form-group">
+                <legend>2. How are id and class attributes selected in CSS?</legend>
+                <textarea id="q2" name="q2" rows="4" cols="50"></textarea>
+            </fieldset>
+
+            <!-- Question 3 -->
+            <fieldset class="form-group">
+                <legend>3. Which of the following is a valid CSS comment?</legend>
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="/* comment */">/* comment */</option>
+                    <option value="<!-- comment -->">&lt;!-- comment --&gt;</option>
+                    <option value="// comment">// comment</option>
+                </select>
+            </fieldset>
+
+            <!-- Question 4 -->
+            <fieldset class="form-group">
+                <legend>4. What is the bottom margin given this declaration?</legend>
+                <pre>margin: 10px 5px 15px 20px;</pre>
+                <input type="number" id="q4" name="q4" min="1" max="20">
+            </fieldset>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </div>
+</body>
+</html>
