@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 :root {
-    --primary-color: #EBEBD3;
+    --primary-color: black;
     --secondary-color: #AAABBC;
     --accent1-color: #087F8C;
     --accent2-color: #011936;
@@ -29,14 +29,14 @@ header {
 }
 
 .header-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
 }
 
 header .header-container nav {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0,1fr));
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 nav a {
@@ -88,8 +88,8 @@ nav a:hover {
 }
 
 .history {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     padding: 2rem;
 }
 
@@ -105,7 +105,7 @@ nav a:hover {
 }
 
 .adventure {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     color: var(--secondary-color);
     padding: 2rem;
 }
@@ -305,4 +305,9 @@ nav a:hover {
 .contact-form {
     display: grid;
     grid-template-columns: repeat(2,minmax(0, 1fr));
+}
+
+figure {
+    margin: 0;
+    width: min-content;
 }
