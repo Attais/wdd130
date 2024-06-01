@@ -147,3 +147,119 @@ nav a:hover {
 .sociallinks img {
     width: 30px;
 }
+
+.contact-section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-section h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.contact-section p {
+    color: #666;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-form, .contact-info {
+    width: 48%;
+}
+
+.contact-form h2, .contact-info h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form p, .contact-info p {
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.radio-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.submit-btn {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background: #555;
+}
+
+.contact-info {
+    padding-left: 20px;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.additional-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.additional-info .map {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.lower-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+
+
+}
