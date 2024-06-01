@@ -16,6 +16,7 @@
 }
 
 body {
+    width: 100%;
     margin: 0;
     font-family: var(--paragraph-font);
     background-color: var(--secondary-color);
@@ -31,6 +32,11 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+header .header-container nav {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
 }
 
 nav a {
@@ -158,7 +164,7 @@ nav a:hover {
 }
 
 .contact-section h1 {
-    font-size: 24px;
+    font-size: 30px;
     color: #333;
 }
 
@@ -170,19 +176,26 @@ nav a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    background-color: lightgray;
+    border: 1px solid black;
 }
 
-.contact-form, .contact-info {
-    width: 48%;
+.contact-form-container, .contact-info {
+    padding: 12px;
+    border: 1px solid black;
 }
 
-.contact-form h2, .contact-info h2 {
+.contact-form-container {
+    flex-grow: 3;
+}
+
+.contact-form-container h2, .contact-info h2 {
     font-size: 20px;
     color: #333;
     margin-bottom: 10px;
 }
 
-.contact-form p, .contact-info p {
+.contact-form-container p, .contact-info p {
     margin-bottom: 10px;
     color: #666;
 }
@@ -195,16 +208,21 @@ nav a:hover {
     display: block;
     margin-bottom: 5px;
     color: #333;
+    font-weight: 550;
 }
 
 .form-group input, .form-group textarea, .form-group select {
-    width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
+.message-field {
+    grid-column: span 2/ span 2;
+}
+
 .form-group textarea {
+    width: 95%;
     height: 100px;
 }
 
@@ -221,13 +239,15 @@ nav a:hover {
 }
 
 .submit-btn {
-    display: inline-block;
+    width: 50%;
     background: #333;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-left: auto;
+    height: 36px;
 }
 
 .submit-btn:hover {
@@ -237,9 +257,15 @@ nav a:hover {
 .contact-info {
     padding-left: 20px;
 }
-
+.social-media {
+    margin-top: 25px;
+}
 .social-media a {
     margin-right: 10px;
+}
+
+.social-media img {
+    width: 30px;
 }
 
 .additional-info {
@@ -260,11 +286,23 @@ nav a:hover {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
+    border: 2px solid black;
 
 
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    gap: 15px;
 }
 
 .employees img {
     width: 200px;
     height: auto;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
 }
