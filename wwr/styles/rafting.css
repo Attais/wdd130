@@ -319,7 +319,7 @@ figure {
 }
 
 .table {
-    width: 400px;
+    width: 500px;
     height: auto;
     border: 2px solid black;
     display: flex;
@@ -357,7 +357,9 @@ figure {
     grid-row-start:1;
     grid-row-end:4;
     grid-column: 1;
-    width: 200px;
+    width: 300px;
+    align-self: center;
+    justify-self: center;
 }
 
 .trip-layout-2 img {
@@ -365,5 +367,7 @@ figure {
     grid-row-start: 1;
     grid-row-end: 4;
     grid-column: 2;
-    width: 200px;
+    width: 300px;
+    align-self: center;
+    justify-self: center;
 }
