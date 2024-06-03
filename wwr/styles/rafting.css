@@ -311,3 +311,59 @@ figure {
     margin: 0;
     width: min-content;
 }
+
+.placeholder {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.table {
+    width: 400px;
+    height: auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightgray;
+}
+
+.table-div {
+    display: grid;
+    gap: 5px;
+    height: min-content;
+
+}
+
+.ads {
+    width: 200px;
+    height: auto;
+    border: 2px solid black;
+    background: lightgray;
+}
+.trip-layout-1, .trip-layout-2 {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    grid-template-rows: auto 1fr auto;
+    background: lightgray;
+    height: min-content;
+}
+
+.trip-layout-1 img {
+    order: -1;
+    grid-row-start:1;
+    grid-row-end:4;
+    grid-column: 1;
+    width: 200px;
+}
+
+.trip-layout-2 img {
+    order: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column: 2;
+    width: 200px;
+}
