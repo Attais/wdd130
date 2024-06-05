@@ -9,8 +9,8 @@
     --heading-font: 'Open Sans', serif;
     --paragraph-font: 'Montserrat', serif;
 
-    --nav-background-color: #087F8C;
-    --nav-link-color: #011936;
+    --nav-background-color:black;
+    --nav-link-color: black;
     --nav-hover-link-color: #6F1A07;
     --nav-hover-background-color: #087F8C;
 }
@@ -81,10 +81,44 @@ nav a:hover {
     width: 80%;
 }
 
+.mission-statement {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    width: 15%;
+}
+
 .hero article img {
     float: right;
     width: 20%;
     margin-left: 10px;
+}
+
+.trips-button {
+    width: 40%;
+    background: olive;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    height: 36px;
+}
+
+.contact-button {
+    width: 40%;
+    background: olive;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: auto;
+    height: 36px;
 }
 
 .history {
@@ -131,12 +165,17 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     position: relative;
+    
 }
 
 .footer-content p {
     margin: 0;
     text-align: center;
     flex: 1;
+}
+
+.footer-link {
+    color: #00008B;
 }
 
 .sociallinks {
@@ -318,28 +357,30 @@ figure {
     justify-content: center;
 }
 
-.table {
-    width: 500px;
-    height: auto;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: lightgray;
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 
-.table-div {
-    display: grid;
-    gap: 5px;
-    height: min-content;
 
-}
 
 .ads {
     width: 200px;
     height: auto;
     border: 2px solid black;
-    background: lightgray;
+    background: var(--accent2-color);
+    color: white
 }
 .trip-layout-1, .trip-layout-2 {
     border: 2px solid black;
@@ -350,6 +391,7 @@ figure {
     grid-template-rows: auto 1fr auto;
     background: lightgray;
     height: min-content;
+    color:#6F1A07
 }
 
 .trip-layout-1 img {
@@ -370,4 +412,50 @@ figure {
     width: 300px;
     align-self: center;
     justify-self: center;
+}
+
+.trip-layout-3 {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    background: lightgray;
+    height: min-content;
+    color:#6F1A07
+}
+
+.rafting-trip-cards {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+    position: relative;
+    justify-content: center;
+    margin-top: -30px;
+    z-index: 10;
+}
+
+.card {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid grey;
+    /* width: 350px; */
+    background-color: white;
+    /* justify-content: center;
+    display: flex;
+    align-content: center; */
+}
+
+.card img {
+    width: 250px;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+    margin: 10px auto;
+    display: flex
+}
+
+.card h2{
+    /* width: min-content; */
+    text-align: center;
+    justify-content: center;
+    align-content: center;
 }
