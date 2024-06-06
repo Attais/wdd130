@@ -461,9 +461,9 @@ tr:nth-child(even) {
 }
 
 .sticky-video {
-    position: sticky;
-    top: 5%;
-    float: right;
-    width: 50%;
+    position: fixed;
+    top: 20%;
+    right: 5%; /* Adjust as needed */
+    width: 300px; /* Adjust the width as needed */
     z-index: 1000;
 }
