@@ -459,3 +459,11 @@ tr:nth-child(even) {
     justify-content: center;
     align-content: center;
 }
+
+.sticky-video {
+    position: sticky;
+    top: 5%;
+    float: right;
+    width: 50%;
+    z-index: 1000;
+}
